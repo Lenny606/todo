@@ -32,3 +32,10 @@ h1, h2 {
     margin: 0;
     display: inline-block;
 }
+
+#tab-wrapper .panel{
+    display: none;
+}
+#tab-wrapper .panel.active{
+    display: block;
+}

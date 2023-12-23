@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>🛒 Shopping List</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 <div id="wrapper">
+    <!--    SECTION 1-->
     <header>
         <div id="header-page">
             <h1 class="title">SHOPPING LIST</h1>
-            <!--            SEARCH FEATURE-->
+            <!--SEARCH FEATURE-->
             <form id="search-item">
                 <label for="search">Hledej:</label><br>
                 <input type="text" placeholder="Search Item" id="search">
@@ -21,13 +22,14 @@
                 </div>
             </form>
         </div>
-
     </header>
-    <form action="" id="add-item">
-        <input placeholder="Add" type="text">
+    <!--    SECTION 2-->
+    <form id="add-item">
+        <input placeholder="Add" type="text" id="add">
         <button>Add</button>
     </form>
-    <div id="list-item">
+    <!--    SECTION 3-->
+    <div id="items-list">
         <h2 class="title">Items to buy</h2>
         <ul>
             <li>
@@ -37,6 +39,13 @@
         </ul>
     </div>
 </div>
-
+<div id="tab-wrapper">
+    <ul class="heading">
+        <li data-clicked="#joke" class="active">JOKE</li>
+        <li data-clicked="#fact">FACT</li>
+    </ul>
+    <div id="joke" class="panel">SOME JOKE <br> <button>Display</button></div>
+    <div id="fact" class="panel">Lorem ipsum dolor sit amet, consectet</div>
+</div>
 </body>
 </html>
